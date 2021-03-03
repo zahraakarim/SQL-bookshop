@@ -224,6 +224,12 @@ List the total number of books we have by each author.
 
 List the average price for books of a specific genre. Make sure this works for genres with multiple books.
 
+### 17. Handle deletion of parent records
+
+Handle the deletion of an author. When they are deleted, all of their books should get deleted too.
+
+This should be achieved by altering the books table.
+
 ## More Challenges
 
 😱 amazing work if you have made it this far! 🥇
