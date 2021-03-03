@@ -223,3 +223,23 @@ List all the books belonging to a certain genre. Make sure this works for genres
 List the total number of books we have by each author.
 
 List the average price for books of a specific genre. Make sure this works for genres with multiple books.
+
+## More Challenges
+
+😱 amazing work if you have made it this far! 🥇
+
+If you're up for some more challenges, have a go at some of these:
+
+1. Use the [ARRAY_AGG()](https://www.postgresql.org/docs/current/functions-aggregate.html) function to get a list of each book in a single row, with all genres that the book belongs to.
+
+2. Add the ability to add reviews to the books. You should then be able to query to find:
+
+- all reviews of a specified book
+- the average rating of a book
+- see only the most favourable and unfavourable reviews for a specified book
+
+3. Add users to the database so that each review can be associated to a user. You should then be able to:
+
+- list all reviews by a single user
+- find out the average rating that a user has given in all of their reviews
+- list books that a user has not reviewed
