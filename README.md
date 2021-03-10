@@ -4,7 +4,7 @@ You have been tasked with modernising your local bookshop's inventory records! �
 
 ## Day 1
 
-### Create a new database for the bookshop
+### 1. Create a new database for the bookshop
 
 In `db/00-create-database.sql`, create a new database called `my_bookshop`.
 
@@ -12,7 +12,7 @@ Make sure that you can run the file multiple times without errors (`psql -f db/0
 
 Each of the subsequent tasks have their own file in the `./db` directory:
 
-### 1. Create a books table
+### 2. Create a books table
 
 You will need a place to keep a record of all the books that are in stock. Each book will need the following:
 
@@ -23,7 +23,7 @@ You will need a place to keep a record of all the books that are in stock. Each 
 - release_date
 - is_fiction
 
-### 2. Insert book data into the books table
+### 3. Insert book data into the books table
 
 Now that you have somewhere to store the information about the books, it's time to populate the table!
 
@@ -44,7 +44,7 @@ Here is some sample data for you to get started with:
 
 Feel free to add some of your favourite books too!
 
-### 3. Query the books table
+### 4. Query the books table
 
 Make some queries to find out some information about the books you have.
 
@@ -57,13 +57,13 @@ Write a query to list each of the following:
 - all of the books sorted in alphabetical order
 - the most expensive book
 
-### 4. Delete some books
+### 5. Delete some books
 
 There are a few books that have been added to the table that are not in stock. Delete them with a single `DELETE` query (not by altering the data added in task 2)!
 
 _If you want to run the deletions multiple times to test them out, the data will need to be reset. We've added a bash script that will run all of the `*.sql` files in the `./db` folder. Try running the command `./run-all.sh` from your terminal in the root of this repository. This will save the output of each `*.sql` file in the `./db` directory to a `*.txt` file of the same name._
 
-### 5. Update some books
+### 6. Update some books
 
 We have a lot of copies of certain books in stock. Time for a sale! For any books that we have more than ten of, reduce the price by 10%.
 
@@ -74,7 +74,7 @@ We have a lot of copies of certain books in stock. Time for a sale! For any book
 
 The bookshop owner is very happy with your work so far! 🤓 Because it's going so well, they have a few more requirements for you!
 
-### 6. Create an authors table
+### 7. Create an authors table
 
 As it stands, the database isn't storing any information about the book's authors.
 
@@ -84,7 +84,7 @@ Each author will need a unique identifier, an author name and, as the owner is a
 
 For our purposes, let's assume that books are written by a single person.
 
-### 7. Insert some author data
+### 8. Insert some author data
 
 Here is a list of some of the authors stocked by our bookshop (each accompanied by fun fact 🤔). Make sure this data is inserted carefully into the authors table.
 
@@ -148,7 +148,7 @@ Margaret Atwood
 
 > Atwood was the first author to contribute to The Future Library Project, which will take one writer's contribution each year for one hundred years to be printed in the year 2114.
 
-### 8. Alter books table
+### 9. Alter books table
 
 Now that we are storing data about the authors of the books, we need some way to associate the two piece of information.
 
@@ -156,7 +156,7 @@ Without losing any data, alter the books table to allow us to link each book to 
 
 _Hint: check out the FOREIGN KEYS section of the notes_
 
-### 9. Update the books
+### 10. Update the books
 
 Next, we need to update each book with the id of its author.
 
@@ -173,7 +173,7 @@ Here is a list of each book with the correct author.
 | The War of the Worlds                | H. G. Wells              |
 | Pride and Prejudice                  | Jane Austen              |
 
-### 10. Select books using JOINs
+### 11. Select books using JOINs
 
 Let's make sure we associated each book with the correct author.
 
@@ -181,13 +181,13 @@ Query your tables to get a list of the book titles with the corresponding author
 
 Query the tables to see which authors don't have an associated book.
 
-### 11. Create a genres table
+### 12. Create a genres table
 
 Once again the bookshop owner has decided that they'd like some extra features added to the database that you're building. This time they'd like to add the ability to categorise the books by genre.
 
 Create a table to store genres. Each genre will also need a unique identifier.
 
-### 12. Insert some genres
+### 13. Insert some genres
 
 Add some genres to your genres table. Here is a selection of genres that the bookshop stocks:
 
@@ -202,23 +202,23 @@ Add some genres to your genres table. Here is a selection of genres that the boo
 | adventure       |
 | classics        |
 
-### 13. Create a junction table
+### 14. Create a junction table
 
 Each book can belong to one or more genres and each genre can have one or more books.
 
 Using the "Many-to-Many Relationships" section of the notes, try creating a junction table allow genres to be assigned to each book.
 
-### 14. Associate books with genres
+### 15. Associate books with genres
 
 Add some data to the junction table that links books with their respective genres.
 
-### 15. Query the books & genres
+### 16. Query the books & genres
 
 List all genres that a certain book belongs to. Make sure this works for books that belong to more than one genre.
 
 List all the books belonging to a certain genre. Make sure this works for genres with multiple books.
 
-### 16. Aggregate queries
+### 17. Aggregate queries
 
 List the total number of books we have by each author.
 
