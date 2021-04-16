@@ -27,7 +27,9 @@ You will need a place to keep a record of all the books that are in stock. Each 
 
 Now that you have somewhere to store the information about the books, it's time to populate the table!
 
-Here is some sample data for you to get started with:
+Here is some sample data for you to get started with.
+
+> Hint: you'll have to research how to escape apostrophes that are mid-string for this one!
 
 | book_id | title                                | price_in_pence | quantity_in_stock | release_date | is_fiction |
 | ------: | ------------------------------------ | -------------: | ----------------: | ------------ | ---------- |
