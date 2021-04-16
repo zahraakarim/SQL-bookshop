@@ -6,7 +6,7 @@ You have been tasked with modernising your local bookshop's inventory records! ð
 
 ### 1. Create a new database for the bookshop
 
-In `db/00-create-database.sql`, create a new database called `my_bookshop`.
+In `db/01-create-database.sql`, create a new database called `my_bookshop`.
 
 Make sure that you can run the file multiple times without errors (`psql -f db/00-create-database.sql`).
 
@@ -224,7 +224,7 @@ List the total number of books we have by each author.
 
 List the average price for books of a specific genre. Make sure this works for genres with multiple books.
 
-### 17. Handle deletion of parent records
+### 18. Handle deletion of parent records
 
 Handle the deletion of an author. When they are deleted, all of their books should get deleted too.
 
