@@ -228,13 +228,13 @@ List the average price for books of a specific genre. Make sure this works for g
 
 ### 18. Handle deletion of parent records
 
-Handle the deletion of an author. When they are deleted, all of their books should get deleted too.
+Handle the deletion of a book. When it is deleted, all of the associated records in the books_genres table should get deleted too. (This should be achieved by altering the books_genres table)
 
-This should be achieved by altering the books table.
+Handle the deletion of an author. When they are deleted, all of their books should get deleted too. (This should be achieved by altering the books table and the books_genres table)
 
 ## More Challenges
 
-😱 amazing work if you have made it this far! 🥇
+😱 Amazing work if you have made it this far! 🥇
 
 If you're up for some more challenges, have a go at some of these:
 
