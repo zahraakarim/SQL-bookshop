@@ -154,6 +154,7 @@ Margaret Atwood
 
 Now that we are storing data about the authors of the books, we need some way to associate the two piece of information.
 
+Our books table already exists and has data on it that we don't want to lose!
 Without losing any data, alter the books table to allow us to link each book to its author.
 
 _Hint: check out the FOREIGN KEYS section of the notes_
