@@ -2,7 +2,7 @@
 
 You have been tasked with modernising your local bookshop's inventory records! 📚
 
-## Day 1
+## Section 1
 
 ### 1. Create a new database for the bookshop
 
@@ -72,7 +72,7 @@ We have a lot of copies of certain books in stock. Time for a sale! For any book
 > If you've reached this point on Day 1 🏆 nice work! You have earned yourself a tea break.
 > Next, you can have a look through the notes for tomorrow's lecture and then challenge yourself by starting the Day 2 tasks.
 
-## Day 2
+## Section 2
 
 The bookshop owner is very happy with your work so far! 🤓 Because it's going so well, they have a few more requirements for you!
 
