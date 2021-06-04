@@ -63,7 +63,7 @@ Write a query to list each of the following:
 
 There are a few books that have been added to the table that are not in stock. Delete them with a single `DELETE` query (not by altering the data added in task 2)!
 
-_If you want to run the deletions multiple times to test them out, the data will need to be reset. We've added a bash script that will run all of the `*.sql` files in the `./db` folder. Try running the command `./run-all.sh` from your terminal in the root of this repository. This will save the output of each `*.sql` file in the `./db` directory to a `*.txt` file of the same name._
+_**If you want to run the deletions multiple times to test them out, the data will need to be reset. We've added a bash script that will run all of the `*.sql` files in the `./db` folder. Try running the command `./run-all.sh` from your terminal in the root of this repository. This will save the output of each `*.sql` file in the `./db` directory to a `*.txt` file of the same name.**_
 
 ### 6. Update some books
 
