@@ -70,7 +70,7 @@ _**If you want to run the deletions multiple times to test them out, the data wi
 We have a lot of copies of certain books in stock. Time for a sale! For any books that we have more than ten of, reduce the price by 10%.
 
 > If you've reached this point on Day 1 🏆 nice work! You have earned yourself a tea break.
-> Next, you can have a look through the notes for tomorrow's lecture and then challenge yourself by starting the Day 2 tasks.
+> Next, you can have a look through the notes for the next lecture and then challenge yourself by starting the Section 2 tasks.
 
 ## Section 2
 
