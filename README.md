@@ -8,7 +8,7 @@ You have been tasked with modernising your local bookshop's inventory records! ð
 
 In `db/01-create-database.sql`, create a new database called `my_bookshop`.
 
-Make sure that you can run the file multiple times without errors (`psql -f db/00-create-database.sql`).
+Make sure that you can run the file multiple times without errors (`psql -f db/01-create-database.sql`).
 
 Each of the subsequent tasks have their own file in the `./db` directory:
 
