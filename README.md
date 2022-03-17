@@ -157,7 +157,7 @@ Now that we are storing data about the authors of the books, we need some way to
 Our books table already exists and has data on it that we don't want to lose!
 Without losing any data, alter the books table to allow us to link each book to its author.
 
-_Hint: check out the FOREIGN KEYS section of the notes_
+_Hint: check out [section 17 of the tutorial](https://sqlbolt.com/lesson/altering_tables) and the FOREIGN KEYS section of the notes_
 
 ### 10. Update the books
 
@@ -229,9 +229,9 @@ List the average price for books of a specific genre. Make sure this works for g
 
 ### 18. Handle deletion of parent records
 
-Handle the deletion of a book. When it is deleted, all of the associated records in the books_genres table should get deleted too. (This should be achieved by altering the books_genres table)
+Handle the deletion of a book. When it is deleted, all of the associated records in the books_genres table should get deleted too. For this update your `CREATE TABLE` statement in `14` to make your `books_genres` table automatically delete the relevant rows.
 
-Handle the deletion of an author. When they are deleted, all of their books should get deleted too. (This should be achieved by altering the books table and the books_genres table)
+Handle the deletion of an author. When they are deleted, all of their books should get deleted too. (This should be achieved by altering both the books table in `02` and the books_genres table in `14`)
 
 ## More Challenges
 
@@ -246,9 +246,58 @@ If you're up for some more challenges, have a go at some of these:
 - all reviews of a specified book
 - the average rating of a book
 - see only the most favourable and unfavourable reviews for a specified book
+- list all books above a certain average rating
 
 3. Add users to the database so that each review can be associated to a user. You should then be able to:
 
 - list all reviews by a single user
 - find out the average rating that a user has given in all of their reviews
 - list books that a user has not reviewed
+
+## Advanced
+
+### Design your database
+
+Well done for making it this far. It's time to design your own database.
+
+You are going to create a database for an Italian recipe website. The meals on our website will be divided up like so...
+
+Your website will need to keep track of several recipes (Minestrone Soup, Pepperoni Pizza, Pistachio gelato etc...) and will need to be able to query these recipes based on a number of conditions.
+
+- Course (Whether the recipe is suitable for a starter, main, dessert, drink, etc...)
+- Category (Fish, Pizza, Pasta, Soup, etc...)
+- Ingredients (Tomatoes, Eggs, Mozzarella, etc...)
+
+Design tables for your database that will be able to track all of this information and the relation between the different data sets. Think carefully about what type of relations your tables have to each other.
+
+Create a new `.sql` file to setup your database and tables and insert some example data.
+
+You might want to run some queries at this point to validate everything is setup correctly.
+
+### Query your data
+
+Once you have your database setup run some queries against it to make sure you can provide all the information your website might need.
+
+Some example queries to get you started could be:
+
+- Write a query which returns a recipe by its name with all the ingredients needed to cook that recipe
+- Find all the recipes which belong to a certain course
+- Find all the recipes which use all of a certain set of ingredients
+- Find all the recipes which use one or more of a certain set of ingredients
+
+Make sure that you can combine your searches to do more advanced filtering such as
+
+- Find all the pizzas that include garlic or tomatoes but not mushrooms
+
+### Add a new table
+
+As a final challenge, create a table for Methods used and integrate this with your existing tables. Bear in mind that ingredients can be cooked using a variety of methods depending on which dish they are being used in, and each method can be used on any number of ingredients. For example 'Poach' could be a Method that applied to fish or eggs; 'Whisk' could apply to eggs in one recipe, but not to eggs in another.
+
+As your website is currently in use you will be unable to drop the whole thing and start again. Simulate this by adding your methods table **after** you have created the other tables and inserted the data. Think about how you will need to adjust your current table setup after the fact to accommodate methods and preserve the original data.
+
+Run some queries related to your methods. Try the following to get started:
+
+- Find all of the methods used in starters
+- Find all of the ingredients that use a specific method
+- Find all of the ingredients that use more than 2 methods
+- Find all of the ingredients for a specific recipe and the relevant methods used for those ingredients
