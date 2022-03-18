@@ -1,14 +1,14 @@
 \c my_bookshop
 
 -- Deleting a book:
--- Modify the books_genres table here:
+-- Modify the books_genres table in section 14 first
 
 -- Delete a book here:
 
 
 -- Deleting an author:
--- Modify the books table here:
+-- Modify the books table in section 02 first
 
--- Modify the books_genres table here:
+-- Modify the books_genres table in section 14 first
 
 -- Delete an author here:
