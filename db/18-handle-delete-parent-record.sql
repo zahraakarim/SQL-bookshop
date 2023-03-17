@@ -7,7 +7,7 @@
 
 
 -- Deleting an author:
--- Modify the books table in section 02 first
+-- Modify the books table in section 09 first
 
 -- Modify the books_genres table in section 14 first
 
